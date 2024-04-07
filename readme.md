@@ -27,3 +27,15 @@ npm run cms-proxy-server
 ```
 
 Once both of these are running, you can access the CMS at `http://<IP-ADDRESS-GIVEN>/admin`.
+
+---
+
+## How to edit the code of blocks:
+
+In order to make changes to blocks so editors can access them in the CMS, make sure to follow these instructions.
+
+1. In the `cms/` folder, modify the features in presumably `common.js`. You can copy an existing feature within the block.
+
+2. Modify the [Zod](https://zod.dev/) schema in config.ts to include the new property.
+
+3. Edit the code of the block in `components/Block`
